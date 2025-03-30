@@ -57,12 +57,12 @@ body {
     width: 340px;
     height: 1px;
     background: #cdcdcd;
-    margin: 10px 0;
+    top: 10px;
+    margin-bottom: 10px;
     border: 0.7px;
 }
 
 .frame-text {
-
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 14px;
@@ -86,6 +86,7 @@ body {
     height: 23px;
     top: 6.5px;
     left: 6px;
+    bottom: 5px;
     border-radius: 6px;
     position: relative; /* Ensure that top/left work properly */
     background-color: white; /* Set the background color */
@@ -109,6 +110,7 @@ body {
 .pages-container {
     width: 370px;
     height: 164px;
+    top: 8px;
     display: flex;
     flex-direction: column;
 }
@@ -196,8 +198,8 @@ input[type="checkbox"]:checked {
 /* Checkmark Alignment */
 input[type="checkbox"]:checked::before {
     content: '';
-    width: 12px;
-    height: 7.5px;
+    width: 17px;
+    height: 12px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -222,7 +224,8 @@ input[type="checkbox"]:checked:hover {
     width: 340px;
     height: 1px;
     background: #cdcdcd;
-    margin: 10px 0;
+    margin-top: 18px;
+    margin-bottom: 10px;
     border: 0.7px;
 }
 /* Done Button */
