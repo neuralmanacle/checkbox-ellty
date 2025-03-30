@@ -5,8 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task List Component</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
 </head>
 <body>
+    <div class="parent-container">
     <div class="widget-container">
         <!-- All Pages Section -->
         <div class="line-container">
@@ -17,29 +20,37 @@
         </div>
 
         <!-- Separator Line -->
-        <div class="separator"></div>
+        <div class="separator-1"></div>
 
         <!-- Individual Pages -->
         <div class="pages-container">
             <div class="pages-element" >
-                <label for="page-1">Page 1</label>
-                <input type="checkbox" id="allPages">
+                <label class="frame-text">Page 1</label>
+                <div class="checkbox-container">
+                    <input type="checkbox" id="allPages">
+                </div>
             </div>
             <div class="pages-element">
-                <label for="page-2">Page 2</label>
-                <input type="checkbox" id="allPages">
+                <label class="frame-text">Page 2</label>
+                <div class="checkbox-container">
+                    <input type="checkbox" id="allPages">
+                </div>
             </div>
             <div class="pages-element">
-                <label for="page-3">Page 3</label>
-                <input type="checkbox" id="allPages">
+                <label class="frame-text">Page 3</label>
+                <div class="checkbox-container">
+                    <input type="checkbox" id="allPages">
+                </div>
             </div>
             <div class="pages-element">
-                <label for="page-4">Page 4</label>
-                <input type="checkbox" id="allPages">
+                <label class="frame-text">Page 4</label>
+                <div class="checkbox-container">
+                    <input type="checkbox" id="allPages">
+                </div>
             </div>
         </div>
 
-        <div class="separator"></div>
+        <div class="separator-2"></div>
 
         <div class="done-container">
             <!-- Done Button -->
@@ -48,5 +59,6 @@
 
         
     </div>
+</div>
 </body>
 </html>
