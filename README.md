@@ -1,4 +1,4 @@
-# Vanilla Todo App Widget
+# Vanilla Todo App Widget 🍦📝
 
 ## Description
 This is the solution to the pixel-perfect replication of the todo app widget provided in the assignment. The solution is named **Vanilla** as there are no frameworks involved—it is purely written in **HTML & CSS**.
