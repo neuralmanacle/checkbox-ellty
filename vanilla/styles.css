@@ -1,4 +1,6 @@
-/* General Styles */
+/* ===========================
+   General Styles
+   =========================== */
 body {
     font-family: 'Montserrat', sans-serif;
     display: flex;
@@ -8,18 +10,21 @@ body {
     background-color: #f5f5f5;
     margin: 0;
 }
-
+/* ===========================
+   Parent Container
+   =========================== */
 .parent-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Full viewport height */
+    height: 100vh;
 }
-
-/* Main Widget Container */
+/* ===========================
+   Main Widget Container
+   =========================== */
 .widget-container {
     width: 370px;
-    height: 326px;
+    height: auto;
     position: absolute;
     top: 85px;
     left: 40%;
@@ -38,7 +43,9 @@ body {
     flex-direction: column;
     align-items: center;
 }
-
+/* ===========================
+   Separators
+   =========================== */
 .separator-container{
     width: 370px;
     height: 20px;
@@ -48,16 +55,27 @@ body {
     align-items: center;
 }
 
-/* Separator Line */
+/* Separator Lines */
 .separator-1 {
     width: 340px;
-    height: 1px;
+    height: 0.7px;
     background: #cdcdcd;
     top: 10px;
     margin-bottom: 10px;
     border: 0.7px;
 }
 
+.separator-2 {
+    width: 340px;
+    height: 0.7px;
+    background: #cdcdcd;
+    margin-top: 18px;
+    margin-bottom: 10px;
+    border: 0.7px;
+}
+/* ===========================
+   Text Styling
+   =========================== */
 .frame-text {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
@@ -65,42 +83,16 @@ body {
     line-height: 130%;
     letter-spacing: 0px;
     vertical-align: middle;
-    
     width: auto;
     height: 18px;
-
-    background: #FFFFFF; /* Dark background */
-    color: #1F2128; /* Ensures text is visible on dark background */
-    display: flex; /* Ensures proper alignment */
-    align-items: center; /* Centers text vertically */
-    justify-content: center; /* Centers text horizontally */
-    padding: 4px 8px; /* Adds some spacing inside */
-    border-radius: 4px; /* Optional rounded corners */
-    }
-.allPages{
-    width: 23px;
-    height: 23px;
-    top: 6.5px;
-    left: 6px;
-    bottom: 5px;
-    border-radius: 6px;
-    position: relative; /* Ensure that top/left work properly */
-    background-color: white; /* Set the background color */
-    border: 1px solid #E3E3E3; /* Border color */
-    cursor: pointer;
-}
-
-.line-break {
-    width: 370px;
-    height: 20px;
-    padding: 10px 15px;
+    background: #FFFFFF;
+    color: #1F2128;
     display: flex;
     align-items: center;
-    gap: 10px;
-    background: #f0f0f0; /* Light gray background */
+    justify-content: center;
+    padding: 4px 8px;
     border-radius: 4px;
-    border: 1px solid #ddd; /* Light border */
-}
+    }
 
 /* Individual Pages Container */
 .pages-container {
@@ -141,12 +133,38 @@ body {
     left: 8px;
 }
 
-/* Container around the checkbox */
+/* ===========================
+Checkbox Styles
+   =========================== */
 .checkbox-container {
     width: 35px;
     height: 35px;
     margin-right: 25px;
     
+}
+.allPages{
+    width: 23px;
+    height: 23px;
+    top: 6.5px;
+    left: 6px;
+    bottom: 5px;
+    border-radius: 6px;
+    position: relative;
+    background-color: white;
+    border: 1px solid #E3E3E3;
+    cursor: pointer;
+}
+.Pages{
+    width: 23px;
+    height: 23px;
+    top: 6.5px;
+    left: 6px;
+    bottom: 5px;
+    border-radius: 6px;
+    position: relative;
+    background-color: white;
+    border: 1px solid #E3E3E3;
+    cursor: pointer;
 }
 /* Default Unchecked Checkbox */
 input[type="checkbox"] {
@@ -155,44 +173,40 @@ input[type="checkbox"] {
     height: 23px;
     border-radius: 6px;
     cursor: pointer;
-    background: #FFFFFF; /* White background */
+    background: #FFFFFF;
     appearance: none;
     border: 1px solid #CDCDCD;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
-    transition: background 0.2s ease-in-out, border 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    margin-right: 10px;
 }
 
-/* Outer Shadow Effect for Unchecked Checkbox */
-input[type="checkbox"]:not(:checked) {
-    box-shadow: 0px 0px 6px 3px rgba(36, 105, 246, 0.1); /* Outer alignment with 10% opacity */
+input[type="checkbox"]:not(:checked):not(:hover) {
+    opacity: 60%;
 }
-
-
 
 /* Hovering Over Unchecked Checkbox */
 input[type="checkbox"]:not(:checked):hover {
-    
-    background-image: url('Vector 141.svg'); /* Show checkmark outline */
+    background-image: url('Vector 141.svg');
     background-position: center;
-    border: 1px solid #878787;
+    border: 1px solid #BDBDBD;
     background-repeat: no-repeat;
     background-color: #FFFFFF;
-    background-size: 15.64px 11.04px;   
+    background-size: 15.64px 11.04px; 
 }
 
-/* 🔘 Pressing (Intermediate Before Fully Checked) */
+/* Pressing (Intermediate Before Fully Checked) */
 input[type="checkbox"]:not(:checked):active {
-    border: 1px solid #BDBDBD; /* Border changes to BDBDBD */
-    background-image: url('Vector\ 141-dark.svg'); /* New vector with #878787 */
+    border: 1px solid #BDBDBD;
+    background-image: url('Vector\ 141-dark.svg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: 15.64px 11.04px;
     background-color: #FFFFFF;
+    box-shadow: 0px 0px 6px 3px rgba(36, 105, 246, 0.1)
 }
-
 
 /* Checked State */
 input[type="checkbox"]:checked {
@@ -206,6 +220,8 @@ input[type="checkbox"]:checked::before {
     content: '';
     width: 17px;
     height: 12px;
+    top: 5.52px;
+    left: 3.68px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -218,7 +234,6 @@ input[type="checkbox"]:checked::before {
 /* While Pressing Checked Checkbox */
 input[type="checkbox"]:checked:active {
     background: #4076E0;
-    border: 1px solid #878787; /* Darker border when pressing */
 }
 
 /* Mouse Moves Outside */
@@ -232,22 +247,15 @@ input[type="checkbox"]:not(:checked):hover {
 }
 /* Unchecking effect (tick and border turn #2469F6) */
 input[type="checkbox"]:checked:active {
-    
     appearance: none;
     background-position: center;
     background-repeat: no-repeat;
     background-size: 15.64px 11.04px;
-    box-shadow: 0px 0px 6px 3px rgba(36, 105, 246, 0.1); /* Outer alignment with 10% opacity */
+    box-shadow: 0px 0px 6px 3px rgba(36, 105, 246, 0.1);
 }
-.separator-2 {
-    width: 340px;
-    height: 1px;
-    background: #cdcdcd;
-    margin-top: 18px;
-    margin-bottom: 10px;
-    border: 0.7px;
-}
-/* Done Button */
+/* ===========================
+   Done Button
+   =========================== */
 .done-button {
     width: 340px;
     height: 40px;
