@@ -16,5 +16,11 @@ document.addEventListener("DOMContentLoaded", function () {
             selectAllCheckbox.checked = [...pageCheckboxes].every(cb => cb.checked);
         });
     });
+    // When Done Button is clicked the widget clears.
+    const doneButton = document.querySelector(".done-container");
+    doneButton.addEventListener("click", () => {
+        pageCheckboxes.forEach(cb => cb.checked = false);
+        selectAllCheckbox.checked = false;
+    });
 });
 
