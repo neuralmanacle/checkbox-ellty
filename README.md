@@ -18,7 +18,8 @@ An additional functionality is included using **JavaScript**, which makes this w
 
 ## How to Use
 1. Clone this repository.
-2. Open `index.html` in a browser.
-3. Start using the todo widget!
+2. Go To vanilla folder.
+3. Open `index.html` in a browser.
+4. Start using the todo widget!
 
 ## Cheers! 🎉
