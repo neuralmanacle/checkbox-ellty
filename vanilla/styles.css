@@ -182,7 +182,7 @@ input[type="checkbox"] {
     position: relative;
     margin-right: 10px;
 }
-
+/* When Not Checked and Not Hovered */
 input[type="checkbox"]:not(:checked):not(:hover) {
     opacity: 60%;
 }
@@ -210,7 +210,7 @@ input[type="checkbox"]:not(:checked):active {
 
 /* Checked State */
 input[type="checkbox"]:checked {
-    background: #2469F6; /* Changed to previous hover color */
+    background: #2469F6;
     border: 1px solid #2469F6;
     box-shadow: none;
 }
