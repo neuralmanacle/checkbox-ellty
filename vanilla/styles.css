@@ -39,10 +39,6 @@ body {
     align-items: center;
 }
 
-
-
-
-
 .separator-container{
     width: 370px;
     height: 20px;
@@ -154,13 +150,14 @@ body {
 }
 /* Default Unchecked Checkbox */
 input[type="checkbox"] {
+    appearance: none;
     width: 23px;
     height: 23px;
     border-radius: 6px;
     cursor: pointer;
     background: #FFFFFF; /* White background */
     appearance: none;
-    border: 1px solid #E3E3E3;
+    border: 1px solid #CDCDCD;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -173,21 +170,30 @@ input[type="checkbox"]:not(:checked) {
     box-shadow: 0px 0px 6px 3px rgba(36, 105, 246, 0.1); /* Outer alignment with 10% opacity */
 }
 
-/* First-Time Press Effect (Extra Layer) */
-input[type="checkbox"]:not(:checked):active {
-    border: 1px solid #BDBDBD; /* Darker border while pressing */
-    box-shadow: 0px 0px 6px 3px rgba(36, 105, 246, 0.2); /* Stronger shadow while pressing */
-}
+
 
 /* Hovering Over Unchecked Checkbox */
 input[type="checkbox"]:not(:checked):hover {
+    
+    background-image: url('Vector 141.svg'); /* Show checkmark outline */
+    background-position: center;
     border: 1px solid #878787;
-    background-image: url('Vector.svg'); /* Show checkmark outline */
+    background-repeat: no-repeat;
+    background-color: #FFFFFF;
+    background-size: 15.64px 11.04px;   
+}
+
+/* 🔘 Pressing (Intermediate Before Fully Checked) */
+input[type="checkbox"]:not(:checked):active {
+    border: 1px solid #BDBDBD; /* Border changes to BDBDBD */
+    background-image: url('Vector\ 141-dark.svg'); /* New vector with #878787 */
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 12px 7.5px;
+    background-size: 15.64px 11.04px;
     background-color: #FFFFFF;
 }
+
+
 /* Checked State */
 input[type="checkbox"]:checked {
     background: #2469F6; /* Changed to previous hover color */
@@ -220,6 +226,19 @@ input[type="checkbox"]:checked:hover {
     background: #4076E0;
 }
 
+/* When Hovered (Unchecked) */
+input[type="checkbox"]:not(:checked):hover {
+    border: 1px solid #BDBDBD;
+}
+/* Unchecking effect (tick and border turn #2469F6) */
+input[type="checkbox"]:checked:active {
+    
+    appearance: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 15.64px 11.04px;
+    box-shadow: 0px 0px 6px 3px rgba(36, 105, 246, 0.1); /* Outer alignment with 10% opacity */
+}
 .separator-2 {
     width: 340px;
     height: 1px;
@@ -257,7 +276,6 @@ input[type="checkbox"]:checked:hover {
     align-items: center;
     flex-direction: column; /* Ensure items inside stack vertically */
 }
-
 
 /* Hover State */
 .done-button:hover {
